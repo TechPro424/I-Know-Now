@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "iknownow",
+	"version": "${version}",
+	"name": "I Know Now",
+	"description": "A simple server-sided mod to let players know if an entity is targeting them.",
+	"authors": [
+		"TechPro424"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/TechPro424",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GNU Lesser General Public License v3.0 only",
+	"icon": "assets/iknownow/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"in.techpro424.iknownow.IKnowNow"
+		]
+	},
+	"mixins": [
+		"iknownow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": ">=1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
